@@ -1,4 +1,4 @@
-<div>
+<div class="border">
     <h3>Quate area.</h3>
     <form (ngSubmit)="submitDisplay()">
         <input class="form-control" type="text" name="name" [(ngModel)]="formName" placeholder="your name..">
@@ -7,9 +7,16 @@
         <textarea class="form-control" name="message" cols="30" rows="5" [(ngModel)]="formMessage"></textarea>
 
         <button type="submit" class="form-control" class="btn btn-info ">SEND</button>
+        <p></p>
     </form>
     <hr>
-    <p>Name:</p>
-    <p>Author:</p>
-    <p></p>
+    <p>Name: <span>{{formName}} </span></p>
+    <p>Author: <span>{{formAuthor}} </span></p>
+    <p>Quate: <span>{{formMessage}} </span></p>
+    <!-- <div *ngFor="let display of displays; let i=index">
+        {{display.formName}}
+        <app-display [displayData]='display'></app-display>
+    </div> -->
+
+
 </div>

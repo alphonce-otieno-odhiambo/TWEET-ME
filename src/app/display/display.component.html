@@ -1,1 +1,16 @@
-<p>display works!</p>
+<!-- <div> -->
+<!-- <h5>Your Quates</h5>
+    {{display}}
+    <div>
+        <p>{{display.formName}} </p>
+        <p>{{display.formAuthor}} </p>
+        <p>{{display.formMessage}} </p>
+    </div>
+</div> -->
+<div class="border">
+    <div *ngFor="let displayx of displays;">
+        <p>{{displayx.formName}} </p>
+        <p>{{displayx.formAuthor}} </p>
+        <p>{{displayx.formMessage}} </p>
+    </div>
+</div>

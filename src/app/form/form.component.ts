@@ -1,4 +1,6 @@
+
 import { Component, OnInit } from '@angular/core';
+import { Display } from '../display';
 
 
 @Component({
@@ -8,15 +10,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
-  formName:StringConstructor;
-  formMessage:string;
-  formAuthor:string;
-  newMess:any;
+   formName:string; 
+   formMessage:string;
+   formAuthor:string;
+   newDisplay:any;
+
+  
+  
+   displays:Display []= [new Display ('Alphonce Otieno', 'romanali', '"When I die, delete my history"s' )];
 
 
 
-
-submitDisplay(){}
+submitDisplay(){ 
+  this.newDisplay= new Display(this.formName, this.formAuthor, this.formMessage);
+  this.displays.push(this.newDisplay);
+}
 
   constructor() { }
 

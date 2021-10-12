@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,Input} from '@angular/core';
+import  {Display } from '../display'
 
 @Component({
   selector: 'app-display',
@@ -6,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./display.component.css']
 })
 export class DisplayComponent implements OnInit {
+  
+  // displays:Display[]=[
+  //   new Display ('Alphonce Otieno', 'romanali', 'When I die, delete my history' )
+  // ];
+  displays:Display []= [new Display ('Alphonce Otieno', 'romanali', '"When I die, delete my history"s' )];
 
   constructor() { }
 
