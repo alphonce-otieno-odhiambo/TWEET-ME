@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
 import { DisplayComponent } from './display/display.component';
 import { QuotDisplayComponent } from './quot-display/quot-display.component';
+import { VoteDirective } from './vote.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
     DisplayComponent,
-    QuotDisplayComponent
+    QuotDisplayComponent,
+    VoteDirective
    
   ],
   imports: [

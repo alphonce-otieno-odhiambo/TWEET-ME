@@ -21,7 +21,7 @@ export class FormComponent implements OnInit {
 
 
 
-submitDisplay(){ 
+ submitDisplay(){ 
   this.newDisplay= new Display(this.formName, this.formAuthor, this.formMessage);
   this.displays.push(this.newDisplay);
 }
