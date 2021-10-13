@@ -1,3 +1,6 @@
 <p>Vote for your Quates here</p>
-<input type="number" class="number">
+<button (click)="upVote()" style="margin-right: 12px;" class="btn btn-success">upvote</button>{{upVotes}}
+
+<button (click)="downvote()" style="margin-right: 12px;" class="btn btn-danger">Downvote</button>{{downVotes}}
+<!-- <input type="number" class="number" Vote> -->
 <button class="btn btn-outline-danger">DELETE QUATE</button>
