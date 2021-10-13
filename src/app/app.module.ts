@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
 import { DisplayComponent } from './display/display.component';
+import { QuotDisplayComponent } from './quot-display/quot-display.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
-    DisplayComponent
+    DisplayComponent,
+    QuotDisplayComponent
    
   ],
   imports: [

@@ -7,6 +7,8 @@ import  {Display } from '../display'
   styleUrls: ['./display.component.css']
 })
 export class DisplayComponent implements OnInit {
+
+  @Input()displayx:Display;
   
   // displays:Display[]=[
   //   new Display ('Alphonce Otieno', 'romanali', 'When I die, delete my history' )
