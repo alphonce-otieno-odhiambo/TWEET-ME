@@ -1,4 +1,4 @@
-import { Component, OnInit ,Input} from '@angular/core';
+import { Component, OnInit ,Input, Output,EventEmitter} from '@angular/core';
 import  {Display } from '../display'
 
 @Component({
@@ -9,11 +9,15 @@ import  {Display } from '../display'
 export class DisplayComponent implements OnInit {
 
   @Input()displayx:Display;
-  
+  @Output()event:EventEmitter <any> = new EventEmitter()
   // displays:Display[]=[
   //   new Display ('Alphonce Otieno', 'romanali', 'When I die, delete my history' )
   // ];
   displays:Display []= [new Display ('Alphonce Otieno', 'romanali', '"When I die, delete my history"s' )];
+
+  eventSubmit(){
+    
+  }
 
   constructor() { }
 

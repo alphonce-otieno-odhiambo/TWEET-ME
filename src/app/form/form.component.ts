@@ -19,6 +19,9 @@ export class FormComponent implements OnInit {
   
    displays:Display []= [new Display ('Alphonce Otieno', 'romanali', '"When I die, delete my history"s' )];
 
+   eventSubmit(displayx:any){
+    this.displays.push(displayx)
+  }
 
 
  submitDisplay(){ 
